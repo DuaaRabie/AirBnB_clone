@@ -1,4 +1,4 @@
-# ** AirBnB project: **
+# **AirBnB project:**
 
 The goal of the project is to deploy a simple copy of the AirBnB website.
 
@@ -11,7 +11,7 @@ This web Application must composed by:
 - An API that provides a communication interface between the front-end and your
   data (retrieve, create, delete, update them)
 
-## ** The Interpreter (console): **
+## **The Interpreter (console):**
 
 The first piece is to manipulate a powerful storage system. This storage engine
 will give us an abstraction between “My object” and “How they are stored and
