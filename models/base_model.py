@@ -2,6 +2,7 @@
 """ This is the base module for Airbnb project """
 import uuid
 from datetime import datetime
+import models
 
 
 class BaseModel():
@@ -18,6 +19,7 @@ class BaseModel():
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            models.storage.new(self)
 
     def __str__(self):
         """ This is the instance representation method """
@@ -27,6 +29,7 @@ class BaseModel():
     def save(self):
         """ This method update the updated_at attribute """
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def __setattr__(self, name, value):
         """ This override __setattr__ method """
