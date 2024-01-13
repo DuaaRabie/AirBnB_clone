@@ -16,7 +16,7 @@ class FileStorage():
 
     def new(self, obj):
         """ This method store new obj to the dictionary"""
-        key = str(obj.__class__.__name__) + str(obj.id)
+        key = str(obj.__class__.__name__) + "." + str(obj.id)
         self.__objects[key] = obj
 
     def save(self):
