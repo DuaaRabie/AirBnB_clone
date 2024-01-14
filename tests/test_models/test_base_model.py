@@ -45,6 +45,12 @@ class TestBaseModel(unittest.TestCase):
         self.assertEqual(self.m.to_dict()['created_at'], cf)
         self.assertEqual(self.m.to_dict()['updated_at'], uf)
 
+    def test_dict_to_instance(self):
+        """ test from dictionary creates instance """
+        m_dict = self.m.to_dict()
+        m2 = BaseModel(**m_dict)
+        self.assertIsInstance(m2, object) 
+
 
 if __name__ == '__main__':
     unittest.main()
