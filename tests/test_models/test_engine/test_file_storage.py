@@ -1,29 +1,38 @@
+#!/usr/bin/python3
+""" This Module to test file storage """
 import unittest
 import os
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 
+
 class TestFileStorage(unittest.TestCase):
- def setUp(self):
-     self.fs = FileStorage()
-     self.bm = BaseModel()
-     self.fs.new(self.bm)
+    """ Test FileStorage """
+    def setUp(self):
+        """ setup before testing """
+        self.s = FileStorage()
+        self.m = BaseModel()
+        self.s.new(self.m)
 
- def test_all_returns_dict(self):
-     self.assertIsInstance(self.fs.all(), dict)
+    def test_all(self):
+        """ tests all returns dictionary """
+        self.assertIsInstance(self.s.all(), dict)
+        
+    def test_new(self):
+        """ Tests new sets object """
+        self.assertIn("BaseModel.{}".format(self.m.id), self.s.all())
 
- def test_new_sets_object(self):
-     self.assertIn("BaseModel.{}".format(self.bm.id), self.fs.all())
+    def test_save(self):
+        """ tests save writes to file """
+        self.s.save()
+        self.assertTrue(os.path.isfile("/root/AirBnB_clone/file.json"))
 
- def test_save_writes_to_file(self):
-     self.fs.save()
-     self.assertTrue(os.path.exists(FileStorage.__file_path))
-
- def test_reload_reads_from_file(self):
-     self.fs.save()
-     fs2 = FileStorage()
-     fs2.reload()
-     self.assertIn("BaseModel.{}".format(self.bm.id), fs2.all())
+    def test_reload(self):
+        """ test_reload_reads_from_file """
+        self.s.save()
+        s2 = FileStorage()
+        s2.reload()
+        self.assertIn("BaseModel.{}".format(self.m.id), s2.all())
 
 if __name__ == '__main__':
- unittest.main()
+    unittest.main()
