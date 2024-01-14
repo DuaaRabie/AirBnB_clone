@@ -1,38 +1,48 @@
+#!/usr/bin/python3
+""" This Module to test BaseModel """
 import unittest
+from datetime import datetime
 from models.base_model import BaseModel
 
+
 class TestBaseModel(unittest.TestCase):
-   def setUp(self):
-       self.bm = BaseModel()
+    """ Test BaseModel """
+    def setUp(self):
+        """ setup before the testing, create instance """
+        self.m = BaseModel()
 
-   def test_id_is_string(self):
-       self.assertIsInstance(self.bm.id, str)
+    def test_id_is_str(self):
+        """ testing id """
+        self.assertIsInstance(self.m.id, str)
 
-   def test_created_at_is_datetime(self):
-       self.assertIsInstance(self.bm.created_at, datetime)
 
-   def test_updated_at_is_datetime(self):
-       self.assertIsInstance(self.bm.updated_at, datetime)
+    def test_created_at_is_datetime(self):
+        """ test created at """
+        self.assertIsInstance(self.m.created_at, datetime)
 
-   def test_save_updates_updated_at(self):
-       old_updated_at = self.bm.updated_at
-       self.bm.save()
-       self.assertNotEqual(old_updated_at, self.bm.updated_at)
+    def test_updated_at_is_datetime(self):
+        """ test updated at """
+        self.assertIsInstance(self.m.updated_at, datetime)
 
-   def test_to_dict_returns_dict(self):
-       self.assertIsInstance(self.bm.to_dict(), dict)
+    def test_updating_updated_at(self):
+        """ test updating updated at """
+        old_updated_at = self.m.updated_at
+        self.m.save()
+        self.assertNotEqual(old_updated_at, self.m.updated_at)
 
-   def test_to_dict_includes_class_name(self):
-       self.assertEqual(self.bm.to_dict()['__class__'], 'BaseModel')
+    def test_to_dict_returns_dict(self):
+        """ test to dict returns dictionary """
+        self.assertIsInstance(self.m.to_dict(), dict)
 
-   def test_to_dict_includes_id(self):
-       self.assertEqual(self.bm.to_dict()['id'], self.bm.id)
+    def test_to_dict_includes_class_id(self):
+        """ test to dict include class name and id """
+        self.assertEqual(self.m.to_dict()['__class__'], 'BaseModel')
+        self.assertEqual(self.m.to_dict()['id'], self.m.id)
 
-   def test_to_dict_includes_created_at_in_iso_format(self):
-       self.assertEqual(self.bm.to_dict()['created_at'], self.bm.created_at.isoformat())
-
-   def test_to_dict_includes_updated_at_in_iso_format(self):
-       self.assertEqual(self.bm.to_dict()['updated_at'], self.bm.updated_at.isoformat())
+    def test_to_dict_created_updated_iso_format(self):
+        """ test to dict include created at/updated at in iso """
+        self.assertEqual(self.m.to_dict()['created_at'], self.m.created_at.isoformat())
+        self.assertEqual(self.m.to_dict()['updated_at'], self.m.updated_at.isoformat())
 
 if __name__ == '__main__':
-   unittest.main()
+    unittest.main()
