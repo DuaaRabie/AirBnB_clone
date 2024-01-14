@@ -17,7 +17,7 @@ class TestFileStorage(unittest.TestCase):
     def test_all(self):
         """ tests all returns dictionary """
         self.assertIsInstance(self.s.all(), dict)
-        
+
     def test_new(self):
         """ Tests new sets object """
         self.assertIn("BaseModel.{}".format(self.m.id), self.s.all())
@@ -33,6 +33,7 @@ class TestFileStorage(unittest.TestCase):
         s2 = FileStorage()
         s2.reload()
         self.assertIn("BaseModel.{}".format(self.m.id), s2.all())
+
 
 if __name__ == '__main__':
     unittest.main()

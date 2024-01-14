@@ -15,7 +15,6 @@ class TestBaseModel(unittest.TestCase):
         """ testing id """
         self.assertIsInstance(self.m.id, str)
 
-
     def test_created_at_is_datetime(self):
         """ test created at """
         self.assertIsInstance(self.m.created_at, datetime)
@@ -41,8 +40,11 @@ class TestBaseModel(unittest.TestCase):
 
     def test_to_dict_created_updated_iso_format(self):
         """ test to dict include created at/updated at in iso """
-        self.assertEqual(self.m.to_dict()['created_at'], self.m.created_at.isoformat())
-        self.assertEqual(self.m.to_dict()['updated_at'], self.m.updated_at.isoformat())
+        cf = self.m.created_at.isoformat()
+        uf = self.m.updated_at.isoformat()
+        self.assertEqual(self.m.to_dict()['created_at'], cf)
+        self.assertEqual(self.m.to_dict()['updated_at'], uf)
+
 
 if __name__ == '__main__':
     unittest.main()
