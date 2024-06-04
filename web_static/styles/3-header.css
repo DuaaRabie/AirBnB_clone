@@ -2,7 +2,7 @@
 header {
 	height: 70px;
 	width: 100%;
-	background-color: white;
+	color: white;
 	border-bottom: 1px solid #CCCCCC;
 	display: flex;
 	align-items: center;
@@ -11,7 +11,10 @@ header {
 }
 
 #logo {
-	background: url('images/logo.png') no-repeat left center;
+	background-image: url('images/logo.png');
+	background-repeat: no-repeat;
+	background-position: left center;
 	width: 50px;
 	height: auto;
+	margin-right: 20px;
 }
