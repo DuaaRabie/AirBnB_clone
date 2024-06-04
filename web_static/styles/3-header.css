@@ -1,7 +1,7 @@
 /* header style */
 header {
 	background: url('images/logo.png') no-repeat center center;
-	background-size: cover;
+	background-size: contain;
 	height: 70px;
 	width: 100%;
 	background-color: white;
