@@ -11,7 +11,7 @@ header {
 }
 
 #logo {
-	background-image: url('images/logo.png');
+	background-image: url('/images/logo.png');
 	background-repeat: no-repeat;
 	background-position: left center;
 	width: 50px;
