@@ -1,6 +1,6 @@
 /* header style */
 header {
-	background: url('images/logo.png') no-repeat center center;
+	background: url('images/logo.png') no-repeat left center;
 	background-size: contain;
 	height: 70px;
 	width: 100%;
