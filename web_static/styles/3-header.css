@@ -4,7 +4,7 @@ header {
 	width: 100%;
 	background: url('/images/logo.png') no-repeat left center;
 	background-color: white;
-	background-size: contain;
+	background-size: cover;
 	border-bottom: 1px solid #CCCCCC;
 	padding-left: 20px;
 }
