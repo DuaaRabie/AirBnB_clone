@@ -2,7 +2,7 @@
 header {
 	height: 70px;
 	width: 100%;
-	background-image: url('/images/logo.png') no-repeat left center;
+	background: url('/images/logo.png') no-repeat left center;
 	background-color: white;
 	background-size: contain;
 	border-bottom: 1px solid #CCCCCC;
@@ -10,7 +10,7 @@ header {
 }
 
 #logo {
-	background-image: url('../images/logo.png');
+	background-image: url('/images/logo.png');
 	background-repeat: no-repeat;
 	background-position: left center;
 	width: 50px;
