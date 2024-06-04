@@ -1,7 +1,5 @@
 /* header style */
 header {
-	background: url('images/logo.png') no-repeat left center;
-	background-size: contain;
 	height: 70px;
 	width: 100%;
 	background-color: white;
@@ -10,4 +8,11 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 20px;
+}
+
+#logo {
+	background: url('images/logo.png') no-repeat left center;
+	width: auto;
+	height: auto;
+	margin-right: 20px;
 }
