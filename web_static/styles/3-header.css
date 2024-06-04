@@ -6,9 +6,6 @@ header {
 	background-color: white;
 	background-size: contain;
 	border-bottom: 1px solid #CCCCCC;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	padding-left: 20px;
 }
 
