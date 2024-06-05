@@ -8,7 +8,6 @@ header {
 	background-color: white;
 	border-bottom: 1px solid #CCCCCC;
 	padding-left: 20px;
-	flex-shrink: 1;
 }
 
 #logo {
