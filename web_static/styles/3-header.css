@@ -5,9 +5,8 @@ header {
 	align-items: center;
 	height: 70px;
 	width: 100%;
-	background-color: blue;
+	background-color: white;
 	border-bottom: 1px solid #CCCCCC;
-	padding-left: 20px;
 }
 
 #logo {
