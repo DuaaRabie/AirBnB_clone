@@ -1,5 +1,8 @@
 /* header style */
 header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	height: 70px;
 	width: 100%;
 	background-color: white;
@@ -11,6 +14,5 @@ header {
 	background-image: url('../images/logo.png');
 	background-repeat: no-repeat;
 	background-position: left center;
-	width: auto;
-	height: auto;
+	background-size: contain; /* or specify width and height */
 }
