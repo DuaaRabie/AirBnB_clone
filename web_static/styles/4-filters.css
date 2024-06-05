@@ -4,6 +4,10 @@
 	width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-conteent: flex-end;
+	padding: 0 15px;
 }
 
 button {
@@ -14,10 +18,7 @@ button {
 	width: 20%;
 	border: none;
 	border-radius: 4px;
-	position: absolute;
 	right: 30px;
-	top: 50%;
-	transform: translateY(-50%);
 	transition: opacity 0.3s ease;
 }
 
