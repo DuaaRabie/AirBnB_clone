@@ -3,11 +3,20 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-image: url('../images/logo.png'); 
-	background-repeat: no-repeat;
-	background-position: left center;
 	height: 70px;
 	width: 100%;
 	background-color: white;
 	border-bottom: 1px solid #CCCCCC;
+	padding-left: 20px;
+}
+
+#logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+
 }
