@@ -14,5 +14,6 @@ header {
 	background-image: url('../images/logo.png');
 	background-repeat: no-repeat;
 	background-position: left center;
+	display: block;
 	background-size: contain; /* or specify width and height */
 }
