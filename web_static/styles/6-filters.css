@@ -57,7 +57,6 @@ section.filters > div > h4 {
 }
 
 section.filters > div > ul {
-	position: absolute;
 	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
@@ -69,6 +68,6 @@ section.filters > div > ul > h2 {
 	font-size: 16px;
 }
 
-.filter:hover.popover {
+section.filters ul:hover {
 	display: block;
 }
