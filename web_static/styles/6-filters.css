@@ -56,13 +56,19 @@ section.filters > div > h4 {
 	margin-top: 0;
 }
 
-.popover ul {
+.popover {
 	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
-	list-style-type: none;
 	display: none;
+}
+
+.popover ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 section.filters > div > ul > h2 {
