@@ -37,7 +37,7 @@ section.filters > div.amenities {
 	justify-content: center;
 	height: 100%;
 	width: 25%;
-	margin: 0 35px 0 auto;
+	margin: 0 auto 0 50px;
 	float: left;
 }
 
