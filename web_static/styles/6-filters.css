@@ -56,7 +56,7 @@ section.filters > div > h4 {
 	margin-top: 0;
 }
 
-section.filters > div > ul {
+section.filters > div > ul.popover {
 	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
