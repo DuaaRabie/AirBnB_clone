@@ -57,12 +57,13 @@ section.filters > div > h4 {
 }
 
 .popover {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
-	position: relative;
 }
 
 li
@@ -72,7 +73,7 @@ li
 	margin-top: 0;
 }
 
-section.filters > div > ul > h2 {
+.popover h2 {
 	font-size: 16px;
 }
 
