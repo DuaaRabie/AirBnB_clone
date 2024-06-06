@@ -57,7 +57,6 @@ section.filters > div > h4 {
 }
 
 section.filters > div > ul {
-	display: none;
 	position: absolute;
 	background-color: #FAFAFA;
 	width: 100%;
