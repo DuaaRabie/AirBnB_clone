@@ -6,8 +6,7 @@ section.filters {
 	border-radius: 4px;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: flex-start;
+	align-items: space-between;
 }
 
 section.filters button {
