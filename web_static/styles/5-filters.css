@@ -34,10 +34,10 @@ section.filters > div.amenities {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	height: 100%;
 	width: 25%;
-	margin: 0 auto 0 35px;
+	margin-left: 35px;
 	float: left;
 }
 
