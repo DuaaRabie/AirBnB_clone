@@ -38,7 +38,7 @@ section.filters > div.amenities {
 	height: 100%;
 	width: 25%;
 	margin-left: 35px;
-	position: absolute;
+	position: relative;
 }
 
 section.filters > div.locations:last-child,
@@ -65,7 +65,7 @@ section.filters > div > h4 {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
-	position: relative;
+	position: absolute;
 }
 
 li
