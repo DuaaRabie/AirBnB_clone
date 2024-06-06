@@ -49,9 +49,11 @@ section.filters > div.amenities:last-child {
 
 section.filters > div > h3 {
 	font-weight: 600;
+	margin-bottom: 0;
 }
 
 section.filters > div > h4 {
 	font-size: 14px;
 	font-weight: 400;
+	margin-top: 0;
 }
