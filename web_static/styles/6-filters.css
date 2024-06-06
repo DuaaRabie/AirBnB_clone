@@ -62,12 +62,13 @@ section.filters > div > ul {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	list-style-type: none;
+	display: none;
 }
 
 section.filters > div > ul > h2 {
 	font-size: 16px;
 }
 
-section.filters ul:hover {
+.filter:hover.popover {
 	display: block;
 }
