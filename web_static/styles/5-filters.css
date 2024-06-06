@@ -6,6 +6,7 @@ section.filters {
 	border-radius: 4px;
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 }
 
 section.filters button {
@@ -21,7 +22,6 @@ section.filters button {
 	align-items: center;
 	justify-content: center;
 	transition: opacity 0.3s ease;
-	float: right;
 }
 
 section.filters button:hover {
@@ -30,9 +30,11 @@ section.filters button:hover {
 
 section.filters > div.locations,
 section.filters > div.amenities {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100%;
 	width: 25%;
-	float: left;
 }
 
 section.filters > div.locations:last-child,
@@ -42,11 +44,9 @@ section.filters > div.amenities:last-child {
 
 section.filters > div > h3 {
 	font-weight: 600;
-	float: left;
 }
 
 section.filters > div > h4 {
 	font-size: 14px;
 	font-weight: 400;
-	float: left;
 }
