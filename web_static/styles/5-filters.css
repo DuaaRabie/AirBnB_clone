@@ -6,7 +6,6 @@ section.filters {
 	border-radius: 4px;
 	display: flex;
 	align-items: space-between;
-	padding: 0, 30px;
 }
 
 section.filters button {
@@ -35,6 +34,7 @@ section.filters > div.amenities {
 	justify-content: center;
 	height: 100%;
 	width: 25%;
+	float: left;
 }
 
 section.filters > div.locations:last-child,
