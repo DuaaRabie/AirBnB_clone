@@ -38,6 +38,7 @@ section.filters > div.amenities {
 	height: 100%;
 	width: 25%;
 	margin-left: 35px;
+	position: absolute;
 }
 
 section.filters > div.locations:last-child,
@@ -59,11 +60,12 @@ section.filters > div > h4 {
 .popover {
 	margin-top: 0;
 	padding: 20px;
-	background-color: blue;
+	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
+	position: relative;
 }
 
 li
