@@ -31,6 +31,8 @@ section.filters button:hover {
 
 section.filters > div.locations,
 section.filters > div.amenities {
+	display: flex;
+	align-items: center;
 	height: 100%;
 	width: 25%;
 	margin: auto 50px;
