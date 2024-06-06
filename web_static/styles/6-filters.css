@@ -75,6 +75,6 @@ section.filters > div > ul > h2 {
 	font-size: 16px;
 }
 
-.filter:hover.popover {
+.filters:hover.popover {
 	display: block;
 }
