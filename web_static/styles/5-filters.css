@@ -5,7 +5,7 @@ section.filters {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: flex;
-	align-items: center;
+	align-items: space-between;
 }
 
 section.filters button {
@@ -29,6 +29,9 @@ section.filters button:hover {
 
 section.filters > div.locations,
 section.filters > div.amenities {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100%;
 	width: 25%;
 }
