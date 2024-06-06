@@ -5,6 +5,7 @@ section.filters {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: flex;
+	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: flex-start;
 }
@@ -33,7 +34,7 @@ section.filters > div.amenities {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	height: 100%;
 	width: 25%;
 }
