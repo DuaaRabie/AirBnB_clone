@@ -65,8 +65,7 @@ section.filters > div > h4 {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
-	position: absolute;
-	float: right;
+	position: relative;
 }
 
 li
