@@ -33,11 +33,10 @@ section.filters > div.locations,
 section.filters > div.amenities {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	height: 100%;
 	width: 25%;
 	margin-right: 35px;
-	float: left;
 }
 
 section.filters > div.locations:last-child,
