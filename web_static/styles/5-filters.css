@@ -33,7 +33,7 @@ section.filters > div.locations,
 section.filters > div.amenities {
 	height: 100%;
 	width: 25%;
-	margin-left: auto 50px;
+	margin: auto 50px;
 }
 
 section.filters > div.locations:last-child,
