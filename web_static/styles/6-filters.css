@@ -68,14 +68,14 @@ section.filters > div > h4 {
 li
 {
 	list-style-type: none;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 0;
 }
 
 section.filters > div > ul > h2 {
 	font-size: 16px;
-	margin: 0;
+	margin-bottom: 0 ;
 }
 
 .locations:hover .popover,
