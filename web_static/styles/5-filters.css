@@ -7,7 +7,7 @@ section.filters {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 section.filters button {
@@ -42,7 +42,7 @@ section.filters > div.amenities {
 
 section.filters > div.locations:last-child,
 section.filters > div.amenities:last-child {
-	border-right: 1px solid #DDDDDD;;	
+	border-right: 1px solid #DDDDDD;	
 }
 
 section.filters > div > h3 {
