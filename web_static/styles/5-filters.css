@@ -18,7 +18,7 @@ section.filters button {
 	width: 20%;
 	border: none;
 	border-radius: 4px;
-	margin-right: 30px;
+	margin: auto 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -43,11 +43,9 @@ section.filters > div.amenities:last-child {
 
 section.filters > div > h3 {
 	font-weight: 600;
-	float: left;
 }
 
 section.filters > div > h4 {
 	font-size: 14px;
 	font-weight: 400;
-	float: left;
 }
