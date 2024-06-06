@@ -8,7 +8,6 @@ section.filters {
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: flex-start;
-	margin-left: 35px;
 }
 
 section.filters button {
@@ -38,7 +37,7 @@ section.filters > div.amenities {
 	justify-content: flex-start;
 	height: 100%;
 	width: 25%;
-	margin-left: 35px;
+	margin-left: 40px;
 }
 
 section.filters > div.locations:last-child,
