@@ -33,10 +33,11 @@ section.filters > div.locations,
 section.filters > div.amenities {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	height: 100%;
 	width: 25%;
+	float: left;
 }
 
 section.filters > div.locations:last-child,
@@ -46,9 +47,11 @@ section.filters > div.amenities:last-child {
 
 section.filters > div > h3 {
 	font-weight: 600;
+	float: left;
 }
 
 section.filters > div > h4 {
 	font-size: 14px;
 	font-weight: 400;
+	float: left;
 }
