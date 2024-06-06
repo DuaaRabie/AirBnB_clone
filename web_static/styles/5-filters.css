@@ -7,6 +7,7 @@ section.filters {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: space-between;
+	justify-content: center;
 }
 
 section.filters button {
@@ -33,7 +34,7 @@ section.filters > div.amenities {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 100%;
 	width: 25%;
 }
