@@ -62,14 +62,11 @@ section.filters > div > h4 {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
-	position: absolute;
 }
 
 .popover ul
 {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
 }
 
 section.filters > div > ul > h2 {
