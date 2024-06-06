@@ -33,8 +33,8 @@ section.filters > div.locations,
 section.filters > div.amenities {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
+	align-items: center;
+	justify-content: flex-start;
 	height: 100%;
 	width: 25%;
 	float: left;
