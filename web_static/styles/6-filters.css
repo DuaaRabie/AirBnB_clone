@@ -57,14 +57,19 @@ section.filters > div > h4 {
 }
 
 section.filters > div > ul {
+	display: none;
+	position: absolute;
 	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
-	display: none;
 	list-style-type: none;
 }
 
 section.filters > div > ul > h2 {
 	font-size: 16px;
+}
+
+.filter:hover.popover {
+	display: block;
 }
