@@ -8,6 +8,7 @@ section.filters {
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: flex-start;
+	margin-left: 35px;
 }
 
 section.filters button {
@@ -19,11 +20,11 @@ section.filters button {
 	border: none;
 	border-radius: 4px;
 	margin-right: 30px;
+	margin-left: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: opacity 0.3s ease;
-	float: right;
+	transition: opacity 0.3s ease;	
 }
 
 section.filters button:hover {
