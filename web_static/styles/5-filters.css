@@ -17,7 +17,7 @@ section.filters button {
 	width: 20%;
 	border: none;
 	border-radius: 4px;
-	margin: auto 30px;
+	margin-right: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -37,8 +37,8 @@ section.filters > div.amenities {
 	justify-content: center;
 	height: 100%;
 	width: 25%;
-	margin: 0 50px 0 auto;
-
+	margin: 0 35px 0 auto;
+	float: left;
 }
 
 section.filters > div.locations:last-child,
