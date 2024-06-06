@@ -23,6 +23,7 @@ section.filters button {
 	align-items: center;
 	justify-content: center;
 	transition: opacity 0.3s ease;
+	float: right;
 }
 
 section.filters button:hover {
@@ -33,6 +34,7 @@ section.filters > div.locations,
 section.filters > div.amenities {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	height: 100%;
 	width: 25%;
 	margin: auto 50px;
