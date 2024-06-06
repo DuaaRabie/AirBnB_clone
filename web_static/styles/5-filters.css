@@ -38,8 +38,8 @@ section.filters > div.amenities {
 	width: 25%;
 }
 
-section.filters > div.locations:first-child,
-section.filters > div.amenities:first-child {
+section.filters > div.locations:last-child,
+section.filters > div.amenities:last-child {
 	border-right: 1px solid #DDDDDD;;	
 }
 
