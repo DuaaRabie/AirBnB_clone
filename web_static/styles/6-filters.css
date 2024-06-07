@@ -65,8 +65,6 @@ section.filters > div > h4 {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
-	position:;
-
 }
 
 .amenities.popover {
@@ -95,4 +93,5 @@ li
 .locations:hover .popover,
 .amenities:hover .popover {
 	display: block;
+	position: relative;
 }
