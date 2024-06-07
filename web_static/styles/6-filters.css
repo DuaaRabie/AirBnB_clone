@@ -22,7 +22,6 @@ section.filters button {
 	margin-left: auto;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	transition: opacity 0.3s ease;	
 }
 
@@ -81,7 +80,6 @@ section.filters > div > h4 {
 
 li
 {
-	color: blue;
 	list-style-type: none;
 	margin-bottom: 0;
 	margin-top: 0;
