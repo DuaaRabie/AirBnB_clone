@@ -13,7 +13,7 @@ section.filters {
 section.filters button {
 	font-size: 18px;
 	background-color: #FF5A5F;
-	color: blue /*#FFFFFF*/;
+	color: blue #FFFFFF;
 	height: 48px;
 	width: 20%;
 	border: none;
@@ -22,6 +22,7 @@ section.filters button {
 	margin-left: auto;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	transition: opacity 0.3s ease;	
 }
 
@@ -69,12 +70,12 @@ section.filters > div > h4 {
 }
 
 .amenities.popover {
-	left: 50%;
+	left: 0;
 	transform: translateX(-50%);
 }
 
 .locations.popover {
-	right: 0;
+	left: 0;
 	top: 100%;
 }
 
