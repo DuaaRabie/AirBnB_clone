@@ -46,6 +46,7 @@ section.filters > div.amenities {
 .filters .locations .text,
 .filters .amenities .text,
 {
+	width: 100%;
 	padding: 20px;
 }
 
@@ -95,4 +96,5 @@ li
 .locations:hover .popover,
 .amenities:hover .popover {
 	display: block;
+	width: 100%;
 }
