@@ -45,7 +45,7 @@ section.filters > div.amenities {
 .filters .locations .text,
 .filters .amenities .text,
 {
-	margin-left: 20px;
+	padding: 20px;
 }
 
 section.filters > div.locations:last-child,
