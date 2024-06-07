@@ -7,7 +7,7 @@ section.filters {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: baseline;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
 section.filters button {
