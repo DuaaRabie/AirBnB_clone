@@ -70,8 +70,8 @@ section.filters > div > h4 {
 }
 
 .amenities.popover {
-	right: 0;
-	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .locations.popover {
