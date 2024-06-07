@@ -6,7 +6,7 @@ section.filters {
 	border-radius: 4px;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
+	align-items: baseline;
 	justify-content: flex-start;
 }
 
@@ -21,7 +21,7 @@ section.filters button {
 	margin-right: 30px;
 	margin-left: auto;
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 	justify-content: center;
 	transition: opacity 0.3s ease;	
 }
