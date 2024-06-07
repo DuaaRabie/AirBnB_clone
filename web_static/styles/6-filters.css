@@ -93,8 +93,8 @@ li
 	padding: 0;
 }
 
-.locations:hover .popover,
-.amenities:hover .popover {
+div.locations:hover > ul.popover,
+div.amenities:hover > ul.popover {
 	display: block;
 	width: 100%;
 }
