@@ -69,12 +69,13 @@ section.filters > div > h4 {
 
 .amenities.popover {
 	left: 0;
-	transform: translateX(-50%);
+	float: left;
 }
 
 .locations.popover {
 	left: 0;
 	top: 100%;
+	float: left;
 }
 
 li
@@ -93,5 +94,4 @@ li
 .locations:hover .popover,
 .amenities:hover .popover {
 	display: block;
-	position: relative;
 }
