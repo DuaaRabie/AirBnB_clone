@@ -43,7 +43,7 @@ section.filters > div.amenities {
 
 .amenities::before,
 .locations::before {
-	margin-left: 20px;
+	left: -20px;
 }
 
 section.filters > div.locations:last-child,
