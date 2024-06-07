@@ -21,7 +21,7 @@ section.filters button {
 	margin-right: 30px;
 	margin-left: auto;
 	display: flex;
-	align-items: baseline;
+	align-items: space-between;
 	justify-content: center;
 	transition: opacity 0.3s ease;	
 }
