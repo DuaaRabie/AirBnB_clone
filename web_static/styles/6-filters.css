@@ -39,7 +39,7 @@ section.filters > div.amenities {
 	width: 25%;
 	margin-left: 35px;
 	position: relative;
-	left-margin: 0;
+	margin-left : 0;
 }
 
 .amenities::before,
