@@ -73,7 +73,7 @@ section.filters > div > div > h4 {
 	margin-top: 0;
 	padding: 20px;
 	background-color: #FAFAFA;
-	width: 100%;
+	width: 80%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
@@ -91,10 +91,10 @@ li
 	font-size: 16px;
 	margin-bottom: 0;
 	padding: 0;
+	width: 100%;
 }
 
 .locations:hover .popover,
 .amenities:hover .popover {
 	display: block;
-	width: 100%;
 }
