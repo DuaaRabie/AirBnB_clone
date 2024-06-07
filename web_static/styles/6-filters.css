@@ -72,6 +72,7 @@ section.filters > div > div > h4 {
 .amenities .popover {
 	margin-top: 0;
 	padding: 20px;
+	position: absolute;
 	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
