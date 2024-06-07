@@ -65,19 +65,10 @@ section.filters > div > h4 {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: none;
-	top: 100%;
+	position: absolute;
+	bottom: 100%;
 	left: 0;
-}
-
-.amenities.popover {
-	left: 0;
-	float: left;
-}
-
-.locations.popover {
-	left: 0;
-	top: 100%;
-	float: left;
+	right: 0;
 }
 
 li
