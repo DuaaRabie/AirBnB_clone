@@ -68,7 +68,7 @@ section.filters > div > div > h4 {
 	padding-left: 20px;
 }
 
-section.filters > div.locations > ul.popover 
+section.filters > div.locations > ul.popover,
 section.filters > div.amenities > ul.popover {
 	margin-top: 0;
 	padding: 20px;
