@@ -1,3 +1,6 @@
+div.container {
+	max-width: 1000px;
+}
 
 section.filters {
 	background-color: white;
