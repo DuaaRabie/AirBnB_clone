@@ -68,7 +68,6 @@ section.filters > div > div > h4 {
 
 .locations .popover,
 .amenities .popover {
-	margin-top: 0;
 	padding: 20px;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
@@ -85,7 +84,6 @@ li
 
 .popover h2 {
 	font-size: 16px;
-	margin-top: 0;
 	margin-bottom: 0;
 	padding: 0;
 }
