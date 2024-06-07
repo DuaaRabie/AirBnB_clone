@@ -68,11 +68,10 @@ section.filters > div > div > h4 {
 	padding-left: 20px;
 }
 
-.locations .popover,
-.amenities .popover {
+section.filters > div.locations > ul.popover 
+section.filters > div.amenities > ul.popover {
 	margin-top: 0;
 	padding: 20px;
-	position: absolute;
 	background-color: #FAFAFA;
 	width: 100%;
 	border: 1px solid #DDDDDD;
