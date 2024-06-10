@@ -1,3 +1,10 @@
+.places {
+	width: 100%;
+	padding: 20px;
+	background-color: white;
+	overflow-x: auto;
+}
+
 .places h1 {
 	font-size: 30px;
 	text-align: left;
