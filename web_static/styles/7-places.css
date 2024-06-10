@@ -1,6 +1,5 @@
 .places {
 	text-align: center;
-	padding: 20px;
 }
 
 .places h1 {
@@ -21,6 +20,4 @@
 .places article h2 {
 	font-size: 30px;
 	text-align: center;
-	margin-top: 0;
-	margin-bottom: 10px;
 }
