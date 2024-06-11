@@ -32,6 +32,7 @@
 	font-size: 30px;
 	text-align: center;
 	padding-right: 15px;
+	margin-top: -40px;
 	position: relative;
 	float: right;
 	display: flex;
@@ -51,6 +52,7 @@
 	width: 100px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .max_guest {
