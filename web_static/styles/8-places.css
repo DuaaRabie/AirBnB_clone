@@ -31,8 +31,7 @@
 	border-radius: 50%; 
 	font-size: 30px;
 	text-align: center;
-	padding-right: 15px;
-	margin-top: -40px;
+	margin-top: -100px;
 	position: relative;
 	float: right;
 	display: flex;
@@ -51,6 +50,7 @@
 .places article .information div {
 	width: 100px;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
