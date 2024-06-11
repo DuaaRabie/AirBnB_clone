@@ -44,8 +44,7 @@
 	height: 80px;
 	border-top: 1px solid #DDDDDD;
 	border-bottom: 1px solid #DDDDDD;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -56,14 +55,11 @@
 	width: 100px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 .max_guest {
 	background-image: url('../images/icon_group.png');
 	background-repeat: no-repeat;
-	background-position: top top;
 }
 
 .number_rooms {
