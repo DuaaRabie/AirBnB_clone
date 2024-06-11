@@ -61,7 +61,7 @@
 .max_guest {
 	background-image: url('../images/icon_group.png');
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: top top;
 }
 
 .number_rooms {
