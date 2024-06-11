@@ -22,6 +22,7 @@
 	font-size: 30px;
 	text-align: center;
 	margin-top: 0;
+
 }
 
 .places article .price_by_night {
@@ -56,6 +57,7 @@
 	width: 100px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 .max_guest {
