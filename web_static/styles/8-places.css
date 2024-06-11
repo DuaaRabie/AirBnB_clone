@@ -5,7 +5,7 @@
 .places h1 {
 	font-size: 30px;
 	text-align: left;
-	/*padding-left: 10px;*/
+	padding-left: 10px;
 }
 
 .places article {
@@ -53,7 +53,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .places article .information div {
