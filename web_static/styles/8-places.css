@@ -55,26 +55,23 @@
 
 .places article .information div {
 	width: 100px;
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	justify-content: center;
+	background-position: 50% 5px;
+	background-repeat: no-repeat;
 }
 
 .max_guest {
 	background-image: url('../images/icon_group.png');
-	background-repeat: no-repeat;
 }
 
 .number_rooms {
 	background-image: url('../images/icon_bed.png');
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 .number_bathrooms {
 	background-image: url('../images/icon_bath.png');
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 .user {
