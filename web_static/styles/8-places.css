@@ -55,9 +55,9 @@
 
 .places article .information div {
 	width: 100px;
+	height: 100%;
+	line-height: 140px;
 	display: inline-block;
-	flex-direction: column;
-	justify-content: center;
 	background-position: 50% 5px;
 	background-repeat: no-repeat;
 }
