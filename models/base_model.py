@@ -20,8 +20,8 @@ class BaseModel():
                     self.__setattr__(key, value)
         else:
             self.id = str(uuid.uuid4())
-            self.created_at = datetime.now()
-            self.updated_at = datetime.now()
+            self.created_at = datetime.utcnow()
+            self.updated_at = datetime.utcnow()
             models.storage.new(self)
 
     def __str__(self):
@@ -31,13 +31,13 @@ class BaseModel():
 
     def save(self):
         """ This method update the updated_at attribute """
-        self.updated_at = datetime.now()
+        self.updated_at = datetime.utcnow()
         models.storage.save()
 
     def __setattr__(self, name, value):
         """ This override __setattr__ method """
         if name != "updated_at":
-            self.updated_at = datetime.now()
+            self.updated_at = datetime.utcnow()
         super().__setattr__(name, value)
 
     def to_dict(self):
