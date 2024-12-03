@@ -2,7 +2,10 @@
 """ This is the base module for Airbnb project """
 import uuid
 from datetime import datetime
-import models
+from models.engine.file_storage import FileStorage
+
+
+storage = FileStorage()
 
 
 class BaseModel():
