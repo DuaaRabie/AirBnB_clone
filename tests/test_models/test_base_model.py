@@ -51,6 +51,20 @@ class TestBaseModel(unittest.TestCase):
         m2 = BaseModel(**m_dict)
         self.assertIsInstance(m2, object) 
 
+    def test_save_creates_file(self):
+        """Test if the file is created after calling save()"""
+        my_model = BaseModel()
+        my_model.name = "Test Model"
+        my_model.my_number = 42
+        my_model.save()
+        self.storage.reload()
+        all_objs = self.storage.all()
+        self.assertTrue(os.path.exists(self.file_path))
+        self.assertIn(f"BaseModel.{my_model.id}", all_objs)
+        stored_model = all_objs[f"BaseModel.{my_model.id}"]
+        self.assertEqual(stored_model.name, "Test Model")
+        self.assertEqual(stored_model.my_number, 42)
+
 
 if __name__ == '__main__':
     unittest.main()
