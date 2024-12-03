@@ -37,8 +37,7 @@ class BaseModel():
 
     def __setattr__(self, name, value):
         """ This override __setattr__ method """
-        if name != "updated_at":
-            super().__setattr__(name, value)
+        super().__setattr__(name, value)
 
     def to_dict(self):
         """ This returns dictionary of instance """
