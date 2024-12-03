@@ -32,12 +32,8 @@ class BaseModel():
 
     def save(self):
         """ This method update the updated_at attribute """
-        self.updated_at = datetime.now()
+        self.updated_at = datetime.utcnow()
         models.storage.save()
-
-    def __setattr__(self, name, value):
-        """ This override __setattr__ method """
-        super().__setattr__(name, value)
 
     def to_dict(self):
         """ This returns dictionary of instance """
