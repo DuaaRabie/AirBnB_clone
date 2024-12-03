@@ -28,5 +28,10 @@ class FileStorage():
         """ This method reload instances from file to the dictionary"""
         if os.path.exists(self.__file_path):
             with open(self.__file_path, "r") as f:
-                self.__objects =\
-                        {k: BaseModel(**v) for k, v in json.load(f).items()}
+                obj_dict = json.load(f)
+                for key, value in obj_dict.items():
+                    class_name = value['__class__']
+                    del value['__class__']
+
+                    cls = globals()[class_name]
+                    self.__objects[key] = cls(**value)

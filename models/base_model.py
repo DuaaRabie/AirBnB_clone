@@ -11,9 +11,11 @@ class BaseModel():
         """ This is the constructor """
         if kwargs:
             for key, value in kwargs.items():
-                if key == "created_at" or key == "updated_at":
-                    value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
                 if key != "__class__":
+                    if key in ["created_at", "updated_at"]:
+                        # also can use datetime.fromisoformat(value)
+                        value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
+                    # also can use simple setattr()
                     self.__setattr__(key, value)
         else:
             self.id = str(uuid.uuid4())
