@@ -12,26 +12,26 @@ class FileStorage():
 
     def all(self):
         """ This method return all instances dictionary"""
-        return self.__objects
+        return FileStorage.__objects
 
     def new(self, obj):
         """ This method store new obj to the dictionary"""
         key = str(obj.__class__.__name__) + "." + str(obj.id)
-        self.__objects[key] = obj
+        FileStorage.__objects[key] = obj
 
     def save(self):
         """ This method return the json representation of all instances"""
-        with open(self.__file_path, "w") as f:
-            json.dump({k: v.to_dict() for k, v in self.__objects.items()}, f)
+        with open(FileStorage.__file_path, "w") as f:
+            json.dump({k: v.to_dict() for k, v in FileStorage.__objects.items()}, f)
 
     def reload(self):
         """ This method reload instances from file to the dictionary"""
-        if os.path.exists(self.__file_path):
-            with open(self.__file_path, "r") as f:
+        if os.path.exists(FileStorage.__file_path):
+            with open(FileStorage.__file_path, "r") as f:
                 obj_dict = json.load(f)
                 for key, value in obj_dict.items():
                     class_name = value['__class__']
                     del value['__class__']
 
                     cls = globals()[class_name]
-                    self.__objects[key] = cls(**value)
+                    FileStorage.__objects[key] = cls(**value)
