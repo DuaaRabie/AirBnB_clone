@@ -42,21 +42,20 @@ class HBNBCommand(cmd.Cmd):
         if not args:
             print("** class name missing **")
             return
-            class_name = args[0]
-            if class_name not in globals():
-                print("** class doesn't exist **")
-                return
-            if len(args) < 2:
-                print("** instance id missing **")
-                return
-            instance_id = args[1]
-            key = f"{class_name}.{instance_id}"
-            instance = storage.all().get(key)
-            if not instance:
-                print("** no instance found **")
-                return
-            else:
-                print(str(instance))
+        class_name = args[0]
+        if class_name not in globals():
+            print("** class doesn't exist **")
+            return
+        if len(args) < 2:
+            print("** instance id missing **")
+            return
+        instance_id = args[1]
+        key = f"{class_name}.{instance_id}"
+        instance = storage.all().get(key)
+        if not instance:
+            print("** no instance found **")
+        else:
+            print(instance)
 
     def do_destroy(self, line):
         """ deletes an instance """
