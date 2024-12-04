@@ -30,10 +30,10 @@ class HBNBCommand(cmd.Cmd):
         if not args:
             print("** class name missing **")
             return
-        class_name = arg[0] 
-        if class_name not in globals():
+        if args[0] not in globals():
             print("** class doesn't exist **")
             return
+        class_name = globals()[args[0]]
         instance = class_name()
         instance.save()
         print(instance.id)
