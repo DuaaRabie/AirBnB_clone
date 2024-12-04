@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """ This Module For Interpreter (console) """
 import cmd
+import uuid
+import sys
+from datetime import datetime
 from models.base_model import BaseModel
-import models
+from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
@@ -22,35 +25,96 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, line):
+        """ create a model instance """
         if not line:
             print("** class name missing **")
-        elif line == "BaseModel":
-            instance = BaseModel()
-            print(instance.id)
-        else:
+        try:
+            class_name = globals()[line]
+        except keyError:
             print("** class doesn't exist **")
+        instance = class_name()
+        instance.save()
+        print(instance.id)
 
     def do_show(self, line):
-        if not line:
+        """ show the instance """
+        args = line.split()
+        if not args:
             print("** class name missing **")
-        else:
-            args = line.split()
-            if args[0] != "BaseModel":
+            return
+            class_name = args[0]
+            if class_name not in globals():
                 print("** class doesn't exist **")
-            elif len(args) != 2:
+                return
+            if len(args) < 2:
                 print("** instance id missing **")
-            else:
-                class_name = args[0]
-                ins_id = args[1]
-                all_ins = models.storage.all()
-                for key, value in all_ins.items():
-                    ins_key = key.split(".")
-                    instance = ins_key[1]
-                    if instance == ins_id:
-                        print(value)
-                        return
+                return
+            instance_id = args[1]
+            key = f"{class_name}.{instance_id}"
+            instance = storage.all().get(key)
+            if not instance:
                 print("** no instance found **")
                 return
+            else:
+                print(str(instance))
+
+    def do_destroy(self, line):
+        """ deletes an instance """
+        args = line.split()
+        if not args:
+            print("** class name missing **")
+            return
+        class_name = args[0]
+        if class_name not in globals(): 
+            print("** class doesn't exist **")
+            return
+        instance_id = args[1]
+        key = f"{class_name}.{instance_id}"
+        instance = storage.all().get(key)
+        if not instance:
+            print("** no instance found **")
+        else:
+            del storage.all()[key]
+            storage.save()
+
+    def do_all(self, line):
+        """ prints all string representations for all instances"""
+        if line and line not in globals():
+            print("** class doesn't exist **")
+            return
+        stored = storage.all().items()
+        instances = [str(v) for k, v in stored if line in k or not line]
+        print([instance for instance in instances])
+
+    def do_update(self, line):
+        """ Updates an instance based on the class name and id"""
+        args = line.split()
+        if not args:
+            print("** class name missing **")
+            return
+        class_name = args[0]
+        if class_name not in globals():
+            print("** class doesn't exist **")
+            return
+        instance_id = args[1]
+        if not instance_id:
+            print("** instance id missing **")
+            return
+        key = f"{class_name}.{instance_id}"
+        instance = storage.all().get(key)
+        if not instance:
+            print("** no instance found **")
+            return
+        attr = args[2]
+        if not attr:
+            print("** attribute name missing **")
+            return
+        value = args[3]
+        if not value:
+            print("** value missing **")
+            return
+        setattr(instance, attr, value)
+        instance.save()
 
     """ Help and Documentation Section """
 
