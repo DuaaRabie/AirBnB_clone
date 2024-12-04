@@ -26,13 +26,15 @@ class HBNBCommand(cmd.Cmd):
 
     def do_create(self, line):
         """ create a model instance """
-        if not line:
+        args = line.split()
+        if not args:
             print("** class name missing **")
             return
-        if line not in globals():
+        class_name = arg[0] 
+        if class_name not in globals():
             print("** class doesn't exist **")
             return
-        instance = line()
+        instance = class_name()
         instance.save()
         print(instance.id)
 
