@@ -111,14 +111,14 @@ class HBNBCommand(cmd.Cmd):
         if not instance:
             print("** no instance found **")
             return
-        attr = args[2]
-        if not attr:
+        if len(args) < 3:
             print("** attribute name missing **")
             return
-        value = args[3]
-        if not value:
+        attr = args[2]
+        if len(args) < 4:
             print("** value missing **")
             return
+        value = args[3]
         setattr(instance, attr, value)
         instance.save()
 
