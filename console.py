@@ -28,10 +28,10 @@ class HBNBCommand(cmd.Cmd):
         """ create a model instance """
         if not line:
             print("** class name missing **")
-        try:
-            class_name = globals()[line]
-        except keyError:
+            return
+        if line not in globals():
             print("** class doesn't exist **")
+            return
         instance = class_name()
         instance.save()
         print(instance.id)
