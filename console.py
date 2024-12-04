@@ -32,7 +32,7 @@ class HBNBCommand(cmd.Cmd):
         if line not in globals():
             print("** class doesn't exist **")
             return
-        instance = class_name()
+        instance = line()
         instance.save()
         print(instance.id)
 
