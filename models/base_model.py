@@ -15,8 +15,6 @@ class BaseModel():
                     if key in ["created_at", "updated_at"]:
                         # also can use datetime.fromisoformat(value)
                         value = datetime.fromisoformat(value)
-                        #value = datetime.strptime(
-                        #value, "%Y-%m-%dT%H:%M:%S.%f")
                     # also can use simple setattr()
                     self.__setattr__(key, value)
         else:
