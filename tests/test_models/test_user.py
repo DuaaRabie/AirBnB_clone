@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-""" This Module to test BaseModel """
+""" This Module to test User """
 import unittest
 from datetime import datetime
 from models.user import User
 
 
 class TestUser(unittest.TestCase):
-    """ Test BaseModel """
+    """ Test User """
     def setUp(self):
         """ setup before the testing, create instance """
         self.m = User()
 
     def test_emsil_is_str(self):
-        """ testing id """
+        """ testing email """
         self.assertIsInstance(self.m.email, str)
 
     def test_password_is_str(self):
