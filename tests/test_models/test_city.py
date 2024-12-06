@@ -13,7 +13,7 @@ class TestCity(unittest.TestCase):
 
     def test_city_id_is_str(self):
         """ testing city_id """
-        self.assertIsInstance(self.m.city_id, str)
+        self.assertIsInstance(self.m.state_id, str)
 
     def test_name_is_str(self):
         """ test name """
